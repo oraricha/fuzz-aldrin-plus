@@ -72,9 +72,13 @@
     //- - - - - - - - - - - - -
 
     $.ajaxSetup({cache: true});
+    
+    var data = ["Chick-fil-A", "Chili's Grill & Bar", "Colgate", "General Motors", "Heinz", "Hyundai", "Toyota", "Walmart", "Wendy's"];
+    
     function set_json_source(url) {
         $.getJSON(url).then(function (response) {
-            global_candidates = response;
+            //global_candidates = response;
+            global_candidates = data;
             $("#sourcetxt").val(response.join("\n"))
         });
     }
