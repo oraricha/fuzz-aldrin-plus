@@ -79,7 +79,8 @@
         $.getJSON(url).then(function (response) {
             //global_candidates = response;
             global_candidates = data;
-            $("#sourcetxt").val(response.join("\n"))
+            //$("#sourcetxt").val(response.join("\n"))
+            $("#sourcetxt").val(data.join("\n"))
         });
     }
     // Load movie dataset, default options are good for list of string.
